@@ -1,0 +1,9 @@
+extends layout
+block content
+    div.profile
+        img.profile-image(src=`images/${imgSrc}`)
+        div.profile-details 
+            h1 #{firstname} #{lastname}
+            h2 #{tagline}
+            div #{bio}
+            a.button.button-twitter(href=`${twitter}`) Follow me on Twitter

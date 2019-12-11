@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div.container
+    each people in peoples
+      figure.person 
+        img.person-image(src=`/images/${people.imgSrc}`)
+        h1.person #{people.firstname}  #{people.lastname}
+        a(href=`/${people.id}`) View Profile  
+
